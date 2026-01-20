@@ -1,0 +1,4 @@
+[32m[32m=== Starting Test Automation Framework ===[0m
+[32m[34mLoading configuration files...[0m
+[32m[34mInitializing API client...[0m
+[31m[31mUnexpected error: 'NoneType' object is not subscriptable[0m

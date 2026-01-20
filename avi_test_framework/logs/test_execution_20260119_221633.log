@@ -1,0 +1,15 @@
+[32m[32m=== Starting Test Automation Framework ===[0m
+[32m[34mLoading configuration files...[0m
+[32m[34mInitializing API client...[0m
+[32m[34mAuthenticating with mock API...[0m
+[32mAttempting login with username: your_actual_username[0m
+[31mLogin failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+[0m
+[32mAttempting registration for user: your_actual_username[0m
+[32mRegistration successful or user already exists[0m
+[31mLogin failed even after registration attempt: 404[0m
+[31m[31mAuthentication failed. Please check credentials.[0m

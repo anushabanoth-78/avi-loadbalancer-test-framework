@@ -1,0 +1,31 @@
+test_cases:
+  - name: "disable_virtual_service"
+    description: "Disable virtual service backend-vs-t1r_1000-1"
+    target_virtual_service: "backend-vs-t1r_1000-1"
+    stages:
+      pre_fetcher:
+        enabled: true
+        components: ["tenants", "virtual_services", "service_engines"]
+      pre_validation:
+        enabled: true
+        validate: "enabled"
+        expected_value: true
+      trigger:
+        enabled: true
+        action: "disable"
+        payload:
+          enabled: false
+      post_validation:
+        enabled: true
+        validate: "enabled"
+        expected_value: false
+    mock_operations:
+      - type: "ssh"
+        operation: "connect"
+        host: "mock_host_1"
+      - type: "ssh"
+        operation: "execute_command"
+        command: "show service status"
+      - type: "rdp"
+        operation: "validate_connection"
+        host: "mock_host_2"

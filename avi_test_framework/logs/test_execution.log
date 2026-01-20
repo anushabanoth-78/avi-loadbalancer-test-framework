@@ -1,0 +1,38 @@
+2026-01-19 22:23:57,382 - INFO - [32m=== Starting Test Automation Framework ===
+2026-01-19 22:23:57,382 - INFO - [34mLoading configuration files...
+2026-01-19 22:23:57,456 - INFO - [34mInitializing API client...
+2026-01-19 22:23:57,457 - INFO - [34mAuthenticating with mock API...
+2026-01-19 22:23:57,459 - INFO - Attempting login with username: avi_user
+2026-01-19 22:23:57,768 - ERROR - Login failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2026-01-19 22:23:57,768 - INFO - Attempting registration for user: avi_user
+2026-01-19 22:24:00,109 - INFO - Registration successful or user already exists
+2026-01-19 22:24:00,221 - ERROR - Login failed even after registration attempt: 404
+2026-01-19 22:24:00,221 - ERROR - [31mAuthentication failed
+2026-01-19 22:24:03,968 - INFO - [32m=== Starting Test Automation Framework ===
+2026-01-19 22:24:03,968 - INFO - [34mLoading configuration files...
+2026-01-19 22:24:03,970 - INFO - [34mInitializing API client...
+2026-01-19 22:24:03,970 - INFO - [34mAuthenticating with mock API...
+2026-01-19 22:24:03,974 - INFO - Attempting login with username: avi_user
+2026-01-19 22:24:04,239 - ERROR - Login failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2026-01-19 22:24:04,239 - INFO - Attempting registration for user: avi_user
+2026-01-19 22:24:06,042 - WARNING - Registration attempt failed: 409 - {
+  "message": "User already exists. Please login."
+}
+
+2026-01-19 22:24:06,122 - ERROR - Login failed even after registration attempt: 404
+2026-01-19 22:24:06,138 - ERROR - [31mAuthentication failed
+2026-01-19 22:48:29,822 - INFO - [32m=== Starting Test Automation Framework ===
+2026-01-19 22:48:29,822 - INFO - [34mLoading configuration files...
+2026-01-19 22:48:29,908 - INFO - [34mInitializing API client...
+2026-01-19 22:48:29,910 - INFO - [34mAuthenticating with mock API...
+2026-01-19 22:48:32,252 - ERROR - [31mAuthentication failed

@@ -1,0 +1,23 @@
+api:
+  base_url: "https://semantic-brandea-banao-dc049ed0.koyeb.app"
+  endpoints:
+    register: "/register"
+    login: "/login1"
+    tenants: "/api/tenant"
+    virtual_services: "/api/virtualservice"
+    service_engines: "/api/serviceengine"
+  timeout: 30
+  max_retries: 3
+
+framework:
+  parallel_execution: true
+  max_workers: 3
+  log_level: "INFO"
+  mock_components:
+    ssh_enabled: true
+    rdp_enabled: true
+
+test_settings:
+  default_test_case: "disable_virtual_service"
+  validate_response: true
+  fail_fast: false
